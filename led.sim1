@@ -1,6 +1,6 @@
 <circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="MCU" CircId="mega328-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-376,440" rotation="0" hflip="1" vflip="1" label="mega328-4" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/led/led/Debug/led.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+<item itemtype="MCU" CircId="mega328-4" mainComp="false" Show_id="true" Show_Val="false" Pos="-376,440" rotation="0" hflip="1" vflip="1" label="mega328-4" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../../../Documents/Atmel Studio/7.0/led/led/Debug/led.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
 
 <item itemtype="Led" CircId="Led-29" mainComp="false" Show_id="false" Show_Val="false" Pos="-492,440" rotation="0" hflip="1" vflip="1" label="Led-29" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
 
@@ -57,6 +57,14 @@
 <item itemtype="Resistor" CircId="Resistor-89" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-168,440" rotation="0" hflip="1" vflip="1" label="Resistor-89" idLabPos="-16,-24" labelrot="0" valLabPos="-16.2549,14.6629" valLabRot="0" Resistance="220 Ω" />
 
 <item itemtype="Resistor" CircId="Resistor-90" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-168,432" rotation="0" hflip="1" vflip="1" label="Resistor-90" idLabPos="-16,-24" labelrot="0" valLabPos="-16.2549,14.6629" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="TextComponent" CircId="TextComponent-93" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,496" rotation="0" hflip="1" vflip="1" label="TextComponent-93" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="SEMÁFORO 1&#xa;" />
+
+<item itemtype="TextComponent" CircId="TextComponent-94" mainComp="false" Show_id="false" Show_Val="false" Pos="-152,356" rotation="0" hflip="1" vflip="1" label="TextComponent-94" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="SEMÁFORO 2" />
+
+<item itemtype="TextComponent" CircId="TextComponent-95" mainComp="false" Show_id="false" Show_Val="false" Pos="-532,376" rotation="0" hflip="1" vflip="1" label="TextComponent-95" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="SEMÁFORO 3" />
+
+<item itemtype="TextComponent" CircId="TextComponent-96" mainComp="false" Show_id="false" Show_Val="false" Pos="-520,508" rotation="0" hflip="1" vflip="1" label="TextComponent-96" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="5 _px" Border="1 _px" Color="#ffffdc" Opacity="1" Font="Helvetica [Cronyx]" Font_Color="#000080" Font_Size="10 _px" Fixed_Width="false" Text="SEMÁFORO 4" />
 
 <item itemtype="Node" CircId="Node-36" mainComp="false" Pos="-456,464" />
 
@@ -128,8 +136,6 @@
 
 <item itemtype="Connector" uid="Connector-135" startpinid="mega328-4-PORTC3" endpinid="Resistor-69-lPin" pointList="-336,464,-272,464,-272,316,-616,316,-616,596,-556,596" />
 
-<item itemtype="Connector" uid="Connector-136" startpinid="mega328-4-PORTC0" endpinid="Resistor-33-lPin" pointList="-336,488,-284,488,-284,324,-608,324,-608,464,-564,464" />
-
 <item itemtype="Connector" uid="Connector-137" startpinid="mega328-4-PORTC1" endpinid="Resistor-34-lPin" pointList="-336,480,-292,480,-292,328,-600,328,-600,456,-564,456" />
 
 <item itemtype="Connector" uid="Connector-138" startpinid="mega328-4-PORTC2" endpinid="Resistor-32-lPin" pointList="-336,472,-300,472,-300,332,-596,332,-596,448,-564,448" />
@@ -161,5 +167,7 @@
 <item itemtype="Connector" uid="Connector-170" startpinid="Led-82-lPin" endpinid="Resistor-90-rPin" pointList="-132,400,-144,400,-144,432,-152,432" />
 
 <item itemtype="Connector" uid="Connector-171" startpinid="mega328-4-PORTB5" endpinid="Resistor-90-lPin" pointList="-336,520,-212,520,-212,432,-184,432" />
+
+<item itemtype="Connector" uid="Connector-136" startpinid="mega328-4-PORTC0" endpinid="Resistor-33-lPin" pointList="-336,488,-284,488,-284,324,-608,324,-608,464,-564,464" />
 
 </circuit>
