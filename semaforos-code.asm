@@ -13,21 +13,22 @@ jmp OCI1A_Interrupt
 
 
 OCI1A_Interrupt:
-	push r20
-	in r20, SREG
-	push r20
+	push temp
+	in temp, SREG
+	push temp
 	
 	subi count, 1 ; contador - 1
 
-	pop r20
-	out SREG, r20
-	pop r20
+	pop temp
+	out SREG, temp
+	pop temp
 	reti
 
 reset:
 
 	; NOMEAR SEMaFOROS
-	.def temp = r20 
+	.def temp = r19 
+	.def s2tempo = r20 ; TEMPO DO SEMAFORO 2
 	.def sema12 = r21 ; semaforo 1 e 2
 	.def sema34 = r22 ; semaforo 3 e 4
 	.def count = r24
@@ -35,19 +36,19 @@ reset:
 	;.def zero = r19
 
 
-	; TEMPO DOS SEMÁFOROS (NAO EH O TEMPO REAL DOS SEMAFOROS)
+	; TEMPO DOS SEMÁFOROS 
 
 
-	.equ T0 = 2
-	.equ T1 = 2
-	.equ T2 = 2
-	.equ T3 = 2
-	.equ T4 = 2
-	.equ T5 = 2
-	.equ T6 = 2
-	.equ T7 = 2
-	.equ T8 = 2
-	.equ T9 = 2
+	.equ T0 = 60
+	.equ T1 = 4
+	.equ T2 = 23
+	.equ T3 = 4
+	.equ T4 = 20
+	.equ T5 = 3
+	.equ T6 = 21
+	.equ T7 = 1
+	.equ T8 = 3
+	.equ T9 = 1
 
 
 	; SETANDO ESTADO INICIAL
